@@ -1,9 +1,12 @@
-Brand,Ad ID,Active Since,Duration (days),Platform,Format,Audience,Concept,Hook,CTA,Signal
-Black Girl Vitamins,461447302981206,sep 26 2024,150+,Meta/Instagram,Video,Black women 25-45,Identity + Community,"Radiant Skin, Stronger Hair, Healthier Joints – All in One Scoop",Shop Now,🔴 Winner - Long running
-Black Girl Vitamins,1318321682604382,may 13 2025,60+,Meta/Instagram/Facebook,Video,Black women 25-45,Transformation,"Take your vitamins, drink water and watch the magic happen!",Order Now,🟡 Testing
-REDCON1,744862068265578,Aug 5 2025,30+,Meta,Video,Men 18-35,Availability + Range,Stop by your local Walmart and stock up,Shop in-stores,🟡 Retail push
-NaturalSlim USA,725767930235937,Jan 5 2026,50+,Meta/Instagram,Video,Spanish-speaking women 35-55,Metabolism + Social proof,Miles de personas han logrado restaurar su metabolismo,Shop Now,🟡 Testing — Spanish market
-Emma x GNC Live Well,941739283817713,mar 18 2024,700+,Meta/Instagram,Carousel,Women 20-35 fitness,Education + Creatine formats,The problem with creatine isn't the creatine…,Link in bio,🔴 Winner - 700+ days active
-Muscle & Strength,1890521521371499,sep 26 2024,150+,Meta,Image,Men 18-35 gym,Price/Deal,Save on workout supplements every day,Shop Now,🟡 Retail/Deal hunter
-rajeannaj x Black Girl Vitamins,711123758736495,Dec 10 2025,75+,TikTok/Instagram,Video UGC,Black women 25-40,Lifestyle + Recipe,Preventative Health 😋,Shop with code,🟡 UGC testing
-Oats Overnight,1803726740148667,Apr 25 2024,300+,Meta/Instagram,Image,Women 25-45 health,Convenience + Nutrition,"Life Is Hard, Make Breakfast Easy",Shop Now,🟡 Winner - convenience angle
+Brand,Ad ID,Active Since,Days Active,Platform,Format,Audience,Concept,Hook,Signal
+Just Ingredients,1253064953437362,feb 16 2024,739,Meta/Instagram,Carousel,Women 25-45 health,Clean label,Your protein powder label shouldn't read like a chemistry test,🔴 WINNER — #1 by longevity
+Muscle & Strength,941739283817713,mar 18 2024,708,Meta,Image,Men 18-35 gym,Price / Deal,Save on workout supplements every day,🟡 STRONG — deal angle converts long term
+Oats Overnight,1803726740148667,Apr 25 2024,670,Meta/Instagram,Image,Women 25-45,Convenience + Nutrition,"Life Is Hard, Make Breakfast Easy",🔴 WINNER — convenience angle
+BulkSupplements.com,484876824334351,Aug 27 2024,546,Meta,Image,Men 25-45 gym,Price / Bulk,Buy Direct & Save. 500+ Clean Supplements,🟡 STRONG — price angle
+Oats Overnight,531725863021981,nov 21 2024,460,Meta/Instagram,Video,Women 25-45,Protein + Taste,You can get enough protein & enjoy it,🟡 STRONG — second format test
+NaturalSlim USA,"1.12699E+15",feb 25 2025,364,Meta/Instagram,Image,Hispanic women 35-55,Metabolism + Social proof,Miles de personas han logrado restaurar su metabolismo,🔴 WINNER — Hispanic market underserved
+Within You Brand,1164390205463679,may 8 2025,292,Meta,Video,Men 25-45 carnivore,Animal protein,World's First Complete Spectrum Animal Protein Complex,🟡 STRONG — carnivore trend emerging
+Black Girl Vitamins,461447302981206,sep 26 2024,287,Meta/Instagram,Carousel,Black women 25-45,Identity + Community,"Radiant Skin, Stronger Hair, Healthier Joints – All in One Scoop",🟡 STRONG — identity angle
+REDCON1,744862068265578,Aug 5 2025,203,Meta,Video,Men 18-35,Retail distribution,Stop by your local Walmart and stock up,⚪ TESTING — retail push
+Black Girl Vitamins,1318321682604382,may 13 2025,287,Meta/Instagram,Video UGC,Black women 25-45,Transformation,"Take your vitamins, drink water and watch the magic happen!",⚪ TESTING
+Emma x GNC Live Well,725767930235937,Jan 5 2026,50,Meta/Instagram,Carousel UGC,Women 20-35 fitness,Education + Creatine,The problem with creatine isn't the creatine…,"👀 WATCH — new, format signal only"

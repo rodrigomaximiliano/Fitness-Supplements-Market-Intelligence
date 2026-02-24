@@ -228,6 +228,65 @@ This project enables:
 
 ---
 
+## 📦 What we have so far (technical status)
+
+- **Data layer**
+  - Raw Google Trends exports in `data/` (5-year weekly series plus 12‑month deep dive).
+  - Enriched qualitative/strategic CSVs in `google-sheets/`:
+    - `... Recommendations.csv` → executive summary & testing framework.
+    - `... Matrix.csv` → creative strategy matrix by persona.
+    - `... Keyword Research.csv` → SEO/SEM keyword evaluation.
+    - `... Ads Analysis .csv` → long‑running ads and creative benchmarks.
+    - `... Sentiment Analysis.csv` → X/Twitter sentiment & objection mapping.
+    - `... Trends.csv` → multi‑year trend, CAGR and priority per category.
+  - `google-sheets/README.md` documents each CSV in English and Spanish.
+
+- **Analysis & logic**
+  - Core analysis implemented in `notebooks/analysis.ipynb` (Python 3.11):
+    - Data loading and cleaning for 5‑year Google Trends series.
+    - Metrics: CAGR, YoY momentum, seasonality, volatility (CV), regression.
+    - Strategic “dashboard” combining trends, seasonality, momentum and scorecard.
+
+- **Outputs**
+  - Figures saved in `figures/` (trend, CAGR, YoY, seasonality, volatility, quarterly view, regression, dashboard).
+  - `presentation/fitness_market_research.pptx` for stakeholder‑friendly delivery.
+
+- **Data hygiene improvements**
+  - Normalized `google-sheets` CSVs for easier use in code:
+    - Fixed mixed numeric/percentage columns in `... Trends.csv` (all numeric now).
+    - Replaced `#ERROR!` with `N/A` in `... Sentiment Analysis.csv`.
+    - Treated large `Ad ID` in `... Ads Analysis .csv` as string to avoid scientific notation issues.
+
+---
+
+## 🔄 How this repository works (end‑to‑end)
+
+- **1. Data ingestion**
+  - Raw search interest comes from Google Trends exports in `data/` (5‑year + last‑12‑months windows).
+  - Qualitative and strategic context comes from Google Sheets exports in `google-sheets/` (recommendations, personas, keyword research, ads, sentiment, trends).
+
+- **2. Analysis**
+  - Python notebook (`notebooks/analysis.ipynb`) and the `analysis/` package:
+    - Load and clean the time series (`load_trends_5y`, `load_trends_12m`).
+    - Compute yearly / quarterly / monthly aggregates.
+    - Derive metrics such as CAGR, YoY momentum, volatility and linear trend.
+
+- **3. Synthesis**
+  - Visual outputs are saved under `figures/` and plugged into the PowerPoint in `presentation/`.
+  - Strategic insights are consolidated and documented in:
+    - The main `README.md` (this file).
+    - `google-sheets/Recommendations.csv` and the persona/keyword/sentiment matrices.
+
+### ✅ Final outcome (what this analysis shows)
+
+- **Creatine** is a **structural growth category**: strong 5‑year CAGR, positive regression slope, and accelerating YoY momentum — recommendation: **scale investment** (especially Q1 and Q3) and prioritize women + creatine positioning.
+- **Protein powder** shows **stable, predictable growth**: maintain and optimize, often bundled with creatine to increase AOV.
+- **Weight loss supplements** are in **structural decline**: shrinking YoY and weaker intent — avoid scaling classic “fat loss” narratives; reframe towards performance/energy if tested at all.
+- **Women + performance** is the **largest underserved segment**: very little ad targeting despite strong search/sentiment signals.
+- **UGC / creator formats** with identity‑ or problem‑first hooks **outperform polished brand ads** and remain profitable for hundreds of days, making them the preferred creative starting point.
+
+---
+
 ## 📅 Project Context
 
 - **Date:** February 2026
