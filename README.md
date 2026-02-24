@@ -27,23 +27,37 @@ The analysis combines quantitative time-series evaluation with qualitative adver
 ## 📁 Project Structure
 
 ```
-Fitness-Supplements-Market-Analysis/
+Suplementos-fitness-analisis/
 │
 ├── data/
 │   ├── multiTimeline-lastfiveyears.csv
-│   └── multiTimeline-last12months.csv
+│   └── multiTimelinelast12monts.csv
 │
 ├── google-sheets/
-│   ├── Ads Analysis.csv
-│   ├── Keyword Research.csv
-│   ├── Matrix.csv
-│   ├── Recommendations.csv
-│   ├── Sentiment Analysis.csv
-│   └── Trends.csv
+│   ├── Supplement short analysis - Recommendations.csv
+│   ├── Supplement short analysis - Matrix.csv
+│   ├── Supplement short analysis - Keyword Research.csv
+│   ├── Supplement short analysis - Ads Analysis .csv
+│   ├── Supplement short analysis - Sentiment Analysis.csv
+│   └── Supplement short analysis - Trends.csv
+│
+├── notebooks/
+│   └── analysis.ipynb
+│
+├── analysis/
+│   ├── __init__.py
+│   ├── data_loader.py
+│   └── metrics.py
+│
+├── figures/
+│   ├── 01_five_year_trend.png
+│   ├── 02_cagr.png
+│   └── ...
 │
 ├── presentation/
 │   └── fitness_market_research.pptx
 │
+├── requirements.txt
 └── README.md
 ```
 
@@ -53,17 +67,17 @@ Fitness-Supplements-Market-Analysis/
 
 ### 1️⃣ Google Trends
 - **Weekly search interest**
-- **February 2021 – February 2026**
+- **February 2021 – February 2026 (5-year view)** plus a **last‑12‑months export** for recent momentum
 - **U.S. market only**
 - **Categories analyzed:**
   - Creatine
-  - Protein
-  - Pre-workout
-  - Weight loss
-  - Mass gainer
+  - Protein powder
+  - Pre workout
+  - Weight loss supplements
+  - Omega 3
 
 ### 2️⃣ Meta Ads Library
-- **10 high-performing supplement ads**
+- **Sample of long-running and high-performing supplement ads**
 - **Creative format analysis**
 - **Duration & positioning review**
 - **Hook structure breakdown**
@@ -148,13 +162,13 @@ The long-term analysis aims to:
 
 ## 📊 Strategic Category Assessment
 
-| Category | Structural Trend | Seasonality | Volatility | Strategic Outlook |
-|----------|------------------|-------------|------------|-------------------|
-| Creatine | Strong Uptrend | High (Jan) | Medium | Scale investment |
-| Protein | Stable Growth | Moderate | Low | Maintain & optimize |
-| Pre-workout | Cyclical | Moderate | Medium | Tactical campaigns |
-| Weight Loss | Structural Decline | High (Jan) | High | Reduce exposure |
-| Mass Gainer | Flat / Niche | Low | Low | Selective targeting |
+| Category     | Structural Trend   | Seasonality | Volatility | Strategic Outlook     |
+|-------------|--------------------|-------------|------------|-----------------------|
+| Creatine    | Strong Uptrend     | High (Jan)  | Medium     | Scale investment      |
+| Protein     | Stable Growth      | Moderate    | Low        | Maintain & optimize   |
+| Pre-workout | Cyclical           | Moderate    | Medium     | Tactical campaigns    |
+| Weight Loss | Structural Decline | High (Jan)  | High       | Reduce exposure       |
+| Mass Gainer | Flat / Niche       | Low         | Low        | Selective targeting   |
 
 ---
 
@@ -196,13 +210,13 @@ This indicates:
 
 ## 💰 Budget Allocation Framework (Example)
 
-| Category | Investment Level | Risk | Priority |
-|----------|------------------|------|----------|
-| Creatine | High | Medium | 🔥 Primary |
-| Protein | Medium | Low | Stable |
-| Pre-workout | Medium | Medium | Tactical |
-| Weight Loss | Low | High | Defensive |
-| Mass Gainer | Low | Low | Niche |
+| Category    | Investment Level | Risk  | Priority  |
+|------------|------------------|-------|-----------|
+| Creatine   | High             | Medium| 🔥 Primary |
+| Protein    | Medium           | Low   | Stable    |
+| Pre-workout| Medium           | Medium| Tactical  |
+| Weight Loss| Low              | High  | Defensive |
+| Mass Gainer| Low              | Low   | Niche     |
 
 ---
 
@@ -239,13 +253,16 @@ This project enables:
     - `... Ads Analysis .csv` → long‑running ads and creative benchmarks.
     - `... Sentiment Analysis.csv` → X/Twitter sentiment & objection mapping.
     - `... Trends.csv` → multi‑year trend, CAGR and priority per category.
-  - `google-sheets/README.md` documents each CSV in English and Spanish.
+  - `google-sheets/README.md` documents each CSV in English.
 
 - **Analysis & logic**
   - Core analysis implemented in `notebooks/analysis.ipynb` (Python 3.11):
     - Data loading and cleaning for 5‑year Google Trends series.
     - Metrics: CAGR, YoY momentum, seasonality, volatility (CV), regression.
     - Strategic “dashboard” combining trends, seasonality, momentum and scorecard.
+  - Reusable helpers in the `analysis/` package:
+    - `load_trends_5y`, `load_trends_12m` for data ingestion.
+    - `yearly_averages`, `cagr_table`, `yoy_momentum`, `seasonality_table`, `volatility_table`, `quarterly_averages`, `linear_trend` for metrics.
 
 - **Outputs**
   - Figures saved in `figures/` (trend, CAGR, YoY, seasonality, volatility, quarterly view, regression, dashboard).
@@ -311,3 +328,4 @@ This project enables:
 **Rodrigo Maximiliano Portillo**  
 Backend Developer → Data & Market Analytics Focus  
 Argentina
+
