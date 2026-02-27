@@ -211,6 +211,4 @@ This data-driven approach maximizes growth potential while managing risk through
 
 ---
 
-*Report generated: February 2026*  
-*Analysis period: February 2021 - February 2026*  
-*Next review: Quarterly*
+*
